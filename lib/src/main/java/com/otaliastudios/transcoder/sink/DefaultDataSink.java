@@ -54,7 +54,7 @@ public class DefaultDataSink implements DataSink {
 
     // We must be able to handle potentially big buffers (e.g. first keyframe) in the queue.
     // Got crashes with 152kb - let's use 256kb. TODO use a dynamic queue instead
-    private final static int BUFFER_SIZE = 256 * 1024;
+    private final static int BUFFER_SIZE = 1024 * 1024;
 
     private boolean mMuxerStarted = false;
     private final MediaMuxer mMuxer;
